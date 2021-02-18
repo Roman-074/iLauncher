@@ -1,7 +1,6 @@
 package com.benny.openlauncher.activity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.WallpaperManager;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
@@ -9,11 +8,11 @@ import android.os.AsyncTask;
 import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.AppCompatCheckBox;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.widget.AppCompatCheckBox;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;

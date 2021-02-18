@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.chyrta:AndroidOnboarder:0.7@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AndroidOnboarder-0.7.aar/f4e3eaa05a02c1f4fe38b3b2374b0eca/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AndroidOnboarder-0.7.aar/f4e3eaa05a02c1f4fe38b3b2374b0eca/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AndroidOnboarder-0.7.aar/f4e3eaa05a02c1f4fe38b3b2374b0eca/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AndroidOnboarder-0.7.aar/1b0d51d29cd07c3bc871a443caa85370/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AndroidOnboarder-0.7.aar/1b0d51d29cd07c3bc871a443caa85370/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-AndroidOnboarder-0.7.aar/1b0d51d29cd07c3bc871a443caa85370/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

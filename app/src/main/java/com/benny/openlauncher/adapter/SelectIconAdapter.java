@@ -1,10 +1,11 @@
 package com.benny.openlauncher.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView.Adapter;
+
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -12,12 +13,12 @@ import com.benny.openlauncher.R;
 import com.benny.openlauncher.core.interfaces.App;
 import java.util.ArrayList;
 
-public class SelectIconAdapter extends Adapter<android.support.v7.widget.RecyclerView.ViewHolder> {
+public class SelectIconAdapter extends Adapter<RecyclerView.ViewHolder> {
     private Context context;
     private ArrayList<App> list;
     private SelectIconAdapterListener selectIconAdapterListener;
 
-    class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView ivIcon;
 
         public ViewHolder(View itemView) {
@@ -39,11 +40,11 @@ public class SelectIconAdapter extends Adapter<android.support.v7.widget.Recycle
         this.selectIconAdapterListener = selectIconAdapterListener;
     }
 
-    public android.support.v7.widget.RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.select_icon_activity_item, parent, false));
     }
 
-    public void onBindViewHolder(android.support.v7.widget.RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         ((ViewHolder) holder).ivIcon.setImageDrawable(((App) this.list.get(position)).getIconProvider().getDrawableSynchronously(-1));
     }
 

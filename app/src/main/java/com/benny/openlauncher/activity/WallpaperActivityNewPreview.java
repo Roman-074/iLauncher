@@ -5,8 +5,8 @@ import android.app.WallpaperManager;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -17,8 +17,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import com.benny.openlauncher.R;
-import com.benny.openlauncher.util.Common;
-
 
 
 public class WallpaperActivityNewPreview extends AppCompatActivity {

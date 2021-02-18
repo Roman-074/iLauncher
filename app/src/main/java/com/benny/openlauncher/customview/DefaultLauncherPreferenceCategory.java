@@ -2,10 +2,9 @@ package com.benny.openlauncher.customview;
 
 import android.content.Context;
 import android.preference.Preference;
-import android.support.v4.internal.view.SupportMenu;
+import androidx.core.internal.view.SupportMenu;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.TextView;
 
 public class DefaultLauncherPreferenceCategory extends Preference {
     public DefaultLauncherPreferenceCategory(Context context) {

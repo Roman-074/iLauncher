@@ -11,14 +11,11 @@ import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Drawable.Callback;
-import android.support.annotation.ColorInt;
-import android.support.annotation.Nullable;
-import android.support.v4.internal.view.SupportMenu;
+import androidx.annotation.ColorInt;
+import androidx.annotation.Nullable;
+import androidx.core.internal.view.SupportMenu;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
-import android.view.ViewGroup;
 
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.base.utils.Log;

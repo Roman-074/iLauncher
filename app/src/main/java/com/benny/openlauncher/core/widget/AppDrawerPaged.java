@@ -2,7 +2,7 @@ package com.benny.openlauncher.core.widget;
 
 import android.content.Context;
 import android.content.res.Configuration;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +16,7 @@ import com.benny.openlauncher.core.manager.Setup;
 import com.benny.openlauncher.core.util.Tool;
 import com.benny.openlauncher.core.viewutil.SmoothPagerAdapter;
 import com.benny.openlauncher.core.widget.AppItemView.LongPressCallBack;
-import com.benny.openlauncher.core.widget.CellContainer.LayoutParams;
+
 import java.util.ArrayList;
 import java.util.List;
 

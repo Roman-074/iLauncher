@@ -10,8 +10,8 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.internal.view.SupportMenu;
+import androidx.core.content.ContextCompat;
+import androidx.core.internal.view.SupportMenu;
 
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.core.MainApplication;

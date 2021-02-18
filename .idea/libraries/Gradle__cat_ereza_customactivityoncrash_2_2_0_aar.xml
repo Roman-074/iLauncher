@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: cat.ereza:customactivityoncrash:2.2.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/da000929f8df796f0920a663a5b59304/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-customactivityoncrash-2.2.0.aar/30600084490b3f079cec51159d39db05/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/da000929f8df796f0920a663a5b59304/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/da000929f8df796f0920a663a5b59304/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customactivityoncrash-2.2.0.aar/da000929f8df796f0920a663a5b59304/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-customactivityoncrash-2.2.0.aar/30600084490b3f079cec51159d39db05/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-customactivityoncrash-2.2.0.aar/30600084490b3f079cec51159d39db05/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-customactivityoncrash-2.2.0.aar/30600084490b3f079cec51159d39db05/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

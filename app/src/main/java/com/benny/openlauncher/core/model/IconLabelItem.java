@@ -3,10 +3,12 @@ package com.benny.openlauncher.core.model;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.core.interfaces.FastItem.DesktopOptionsItem;
@@ -33,7 +35,7 @@ public class IconLabelItem extends AbstractItem<IconLabelItem, IconLabelItem.Vie
     private Typeface typeface;
     private int width;
 
-    static class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
 
         ViewHolder(View itemView) {

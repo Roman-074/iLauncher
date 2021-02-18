@@ -3,19 +3,16 @@ package com.benny.openlauncher.activity;
 import android.app.Activity;
 import android.app.WallpaperManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.adapter.AdapterWallpaperNew;
-
-import com.benny.openlauncher.util.Common;
-
 
 
 public class WallpaperActivityNew extends AppCompatActivity {

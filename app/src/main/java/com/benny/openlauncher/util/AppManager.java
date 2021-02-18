@@ -11,8 +11,8 @@ import android.os.AsyncTask.Status;
 import android.os.Build.VERSION;
 import android.provider.ContactsContract.Contacts;
 import android.provider.Telephony.Sms;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.util.Log;
 
 import com.benny.openlauncher.R;

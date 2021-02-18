@@ -1,6 +1,6 @@
 package com.benny.openlauncher.core.interfaces;
 
-import android.support.v7.widget.RecyclerView.ViewHolder;
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import com.mikepenz.fastadapter.IItem;
 
 public interface FastItem {

@@ -6,10 +6,11 @@ import android.content.pm.PackageManager;
 import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.service.notification.StatusBarNotification;
-import android.support.annotation.CallSuper;
-import android.support.annotation.UiThread;
-import android.support.v4.app.NotificationCompat;
-import android.support.v7.widget.RecyclerView.Adapter;
+import androidx.annotation.CallSuper;
+import androidx.annotation.UiThread;
+import androidx.core.app.NotificationCompat;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,8 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.Unbinder;
-import butterknife.internal.Utils;
+
 import com.benny.openlauncher.App;
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.base.utils.BaseUtils;
@@ -29,13 +29,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class NotificationAdapter extends Adapter<android.support.v7.widget.RecyclerView.ViewHolder> {
+public class NotificationAdapter extends Adapter<RecyclerView.ViewHolder> {
     private App application;
     private Context context;
     private ArrayList<StatusBarNotification> list = new ArrayList();
     private NotificationAdapterListener notificationAdapterListener;
 
-    class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.header_all)
         View header_all;
         @BindView(R.id.ivDeleteNotifications)
@@ -99,12 +99,12 @@ public class NotificationAdapter extends Adapter<android.support.v7.widget.Recyc
         return this.list.size();
     }
 
-    public android.support.v7.widget.RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.view_lock_screen_main_all, parent, false));
     }
 
     @SuppressLint("WrongConstant")
-    public void onBindViewHolder(android.support.v7.widget.RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         try {
             ViewHolder viewHolder = (ViewHolder) holder;
             if (position == 0) {

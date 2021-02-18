@@ -1,9 +1,10 @@
 package com.benny.openlauncher.adapter;
 
 import android.content.Context;
-import android.support.annotation.CallSuper;
-import android.support.annotation.UiThread;
-import android.support.v7.widget.RecyclerView.Adapter;
+import androidx.annotation.CallSuper;
+import androidx.annotation.UiThread;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,8 +13,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.Unbinder;
-import butterknife.internal.Utils;
 
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.base.BaseApplication;
@@ -22,12 +21,12 @@ import com.benny.openlauncher.base.utils.Log;
 import com.bumptech.glide.Glide;
 
 
-public class SettingsMoreApps extends Adapter<android.support.v7.widget.RecyclerView.ViewHolder> {
+public class SettingsMoreApps extends Adapter<RecyclerView.ViewHolder> {
     private BaseApplication application;
     private Context context;
     private SettingsMoreAppsListener settingsMoreAppsListener;
 
-    class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.more_app_item_iv)
         ImageView ivIcon;
         @BindView(R.id.more_app_item_tv)
@@ -61,11 +60,11 @@ public class SettingsMoreApps extends Adapter<android.support.v7.widget.Recycler
         return this.application.getBaseConfig().getMore_apps().size();
     }
 
-    public android.support.v7.widget.RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_settings_more_apps_item, parent, false));
     }
 
-    public void onBindViewHolder(android.support.v7.widget.RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         try {
             ViewHolder viewHolder = (ViewHolder) holder;
             BaseConfig.more_apps more_apps = (BaseConfig.more_apps) this.application.getBaseConfig().getMore_apps().get(position);

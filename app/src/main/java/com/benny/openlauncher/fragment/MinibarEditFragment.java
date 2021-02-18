@@ -4,10 +4,10 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +45,7 @@ public class MinibarEditFragment extends Fragment implements ItemTouchCallback {
         public final long id;
         public final ActionDisplayItem item;
 
-        public static class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+        public static class ViewHolder extends RecyclerView.ViewHolder {
             CheckBox checkbox;
             TextView description;
             ImageView icon;

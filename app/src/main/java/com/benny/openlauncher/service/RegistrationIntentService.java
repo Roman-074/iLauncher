@@ -1,17 +1,9 @@
 package com.benny.openlauncher.service;
 
 import android.app.IntentService;
-import android.app.Service;
 import android.content.Intent;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 import android.util.Log;
-
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.transform.ErrorListener;
 
 /**
  * Created by Phí Văn Tuấn on 27/7/2018.

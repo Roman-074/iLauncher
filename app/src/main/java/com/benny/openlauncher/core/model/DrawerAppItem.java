@@ -2,6 +2,8 @@ package com.benny.openlauncher.core.model;
 
 import android.view.View;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.benny.openlauncher.R;
 import com.benny.openlauncher.core.interfaces.App;
 import com.benny.openlauncher.core.interfaces.FastItem.AppItem;
@@ -26,7 +28,7 @@ public class DrawerAppItem extends AbstractItem<DrawerAppItem, DrawerAppItem.Vie
         }
     };
 
-    static class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
         AppItemView appItemView;
         Builder builder = new Builder(this.appItemView, Setup.appSettings().getDrawerIconSize()).withOnTouchGetPosition(null, null).setLabelVisibility(Setup.appSettings().isDrawerShowLabel()).setTextColor(Setup.appSettings().getDrawerLabelColor()).setFastAdapterItem();
 

@@ -2,11 +2,11 @@ package com.benny.openlauncher.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.support.v7.widget.helper.ItemTouchHelper;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -42,7 +42,7 @@ public class MinibarEditActivity extends AppCompatActivity implements ItemTouchC
         public final long id;
         public final ActionDisplayItem item;
 
-        public static class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+        public static class ViewHolder extends RecyclerView.ViewHolder {
             CheckBox cb;
             ImageView iv;
             TextView tv;

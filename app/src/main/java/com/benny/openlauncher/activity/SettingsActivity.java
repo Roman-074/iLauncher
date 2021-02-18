@@ -19,13 +19,13 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
-import android.support.annotation.RequiresApi;
-import android.support.design.widget.AppBarLayout;
-import android.support.v4.app.NotificationCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.RequiresApi;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.core.app.NotificationCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -52,8 +52,6 @@ import com.benny.openlauncher.util.Constant;
 import com.benny.openlauncher.util.DialogAppCallback;
 import com.benny.openlauncher.util.DialogPermission;
 import com.benny.openlauncher.util.NotificationEnabledUtil;
-import com.benny.openlauncher.util.Tool;
-
 
 
 public class SettingsActivity extends AppCompatActivity implements OnSharedPreferenceChangeListener {

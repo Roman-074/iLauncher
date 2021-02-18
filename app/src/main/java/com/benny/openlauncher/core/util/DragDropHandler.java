@@ -4,7 +4,7 @@ import android.content.ClipData;
 import android.content.Intent;
 import android.os.Build.VERSION;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.DragEvent;
 import android.view.View;
 import com.benny.openlauncher.core.model.Item;

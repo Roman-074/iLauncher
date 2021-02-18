@@ -5,11 +5,10 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build.VERSION;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.benny.openlauncher.activity.AutoFinishActivity;
-import com.benny.openlauncher.base.utils.Log;
 import com.benny.openlauncher.core.util.Tool;
 
 public class FiveSecsDelayContentProvider extends ContentProvider {

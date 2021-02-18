@@ -2,14 +2,17 @@ package com.benny.openlauncher.viewutil;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.text.Html;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.TextDrawable.IBuilder;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
@@ -44,7 +47,7 @@ public class QuickCenterItem {
     public static class ContactItem extends AbstractItem<ContactItem, ContactItem.ViewHolder> {
         private ContactContent info;
 
-        class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+        class ViewHolder extends RecyclerView.ViewHolder {
             ImageView imageView;
 
             ViewHolder(View view) {
@@ -114,7 +117,7 @@ public class QuickCenterItem {
         public String date;
         public String description;
 
-        protected class ViewHolder extends android.support.v7.widget.RecyclerView.ViewHolder {
+        protected class ViewHolder extends RecyclerView.ViewHolder {
             protected TextView date;
             protected TextView description;
 
