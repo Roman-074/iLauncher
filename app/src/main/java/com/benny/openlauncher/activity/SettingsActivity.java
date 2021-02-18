@@ -85,6 +85,7 @@ public class SettingsActivity extends AppCompatActivity implements OnSharedPrefe
 
         public void onCreate(Bundle savedInstances) {
             super.onCreate(savedInstances);
+            android.util.Log.d("my", "onCreate: SettingsActivity(SettingsFragmentDesktop)");
             getPreferenceManager().setSharedPreferencesName(AppSettingsBase.SHARED_PREF_APP);
             addPreferencesFromResource(R.xml.preferences_desktop);
         }

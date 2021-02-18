@@ -76,6 +76,7 @@ public class SplashActivity extends BaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: SplashActivity");
         requestWindowFeature(1);
         getWindow().setFlags(1024, 1024);
         //new Builder().addTestDevice("E873FCC3AB6220B9E3B68D32D8FE7E52");

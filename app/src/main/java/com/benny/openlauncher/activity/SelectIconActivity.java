@@ -55,6 +55,7 @@ public class SelectIconActivity extends AppCompatActivity {
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: SelectIconActivity");
         requestWindowFeature(1);
         getWindow().setFlags(1024, 1024);
         setContentView((int) R.layout.select_icon_activity);

@@ -13,6 +13,7 @@ import butterknife.ButterKnife;
 public class SelectWidgetActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: SelectWidgetActivity");
         setContentView((int) R.layout.select_widget);
         ButterKnife.bind((Activity) this);
     }

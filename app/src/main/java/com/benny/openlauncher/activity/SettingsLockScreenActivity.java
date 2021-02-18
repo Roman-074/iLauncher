@@ -34,6 +34,7 @@ public class SettingsLockScreenActivity extends AppCompatActivity {
 
     public void onCreate(Bundle b) {
         super.onCreate(b);
+        android.util.Log.d("my", "onCreate: SettingsLockScreenActivity");
         requestWindowFeature(1);
         getWindow().setFlags(1024, 1024);
         setContentView( R.layout.activity_settings_lock_screen);

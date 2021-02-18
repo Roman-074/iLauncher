@@ -57,6 +57,7 @@ public class WallpaperActivityNewPreview extends AppCompatActivity {
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: WallpaperActivityNewPreview");
         requestWindowFeature(1);
         getWindow().setFlags(1024, 1024);
         setContentView((int) R.layout.wallpaper_activity_new_preview);

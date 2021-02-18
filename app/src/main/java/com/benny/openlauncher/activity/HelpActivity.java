@@ -25,6 +25,7 @@ public class HelpActivity extends AppCompatActivity {
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: HelpActivity");
         requestWindowFeature(1);
         getWindow().setFlags(1024, 1024);
         setContentView(

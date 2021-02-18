@@ -27,6 +27,7 @@ public class SelectMusicPlayer extends AppCompatActivity {
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: SelectMusicPlayer");
         setContentView((int) R.layout.select_music_player);
         ButterKnife.bind((Activity) this);
         this.adapterSelectMusicPlayer = new AdapterSelectMusicPlayer(this);

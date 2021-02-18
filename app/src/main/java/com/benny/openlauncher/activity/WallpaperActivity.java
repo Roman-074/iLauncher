@@ -34,6 +34,7 @@ public class WallpaperActivity extends AppCompatActivity {
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: WallpaperActivity");
         requestWindowFeature(1);
         getWindow().setFlags(1024, 1024);
         setContentView((int) R.layout.wallpaper_activity);

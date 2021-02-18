@@ -185,6 +185,7 @@ public class Home extends com.benny.openlauncher.core.activity.Home implements D
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: Home");
         ButterKnife.bind(this);
         BaseUtils.printKeyHash(this);
     }

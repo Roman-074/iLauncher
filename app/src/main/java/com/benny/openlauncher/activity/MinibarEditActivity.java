@@ -92,6 +92,7 @@ public class MinibarEditActivity extends AppCompatActivity implements ItemTouchC
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: MinibarEditActivity");
         setContentView((int) R.layout.activity_minibar_edit);
         ButterKnife.bind((Activity) this);
         setSupportActionBar(this.tb);

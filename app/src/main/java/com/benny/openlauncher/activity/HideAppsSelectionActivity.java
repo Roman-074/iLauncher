@@ -48,6 +48,7 @@ public class HideAppsSelectionActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: HideAppsSelectionActivity");
         setContentView((int) R.layout.activity_hide_apps);
         if (VERSION.SDK_INT >= 21) {
             getWindow().addFlags(Integer.MIN_VALUE);
