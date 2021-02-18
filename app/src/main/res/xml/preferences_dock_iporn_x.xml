@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key__dock_enable"
+        android:title="On/Off Dock" />
+    <PreferenceCategory android:title="@string/pref_title__size">
+        <com.benny.openlauncher.widget.NumberPickerPreference
+            android:defaultValue="4"
+            android:key="@string/pref_key__dock_size"
+            android:summary="@string/pref_summary__dock_size"
+            android:title="@string/pref_title__dock_size" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_title__appearance">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key__dock_show_label"
+            android:summary="@string/pref_summary__desktop_show_label"
+            android:title="@string/pref_title__desktop_show_label" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_title__color">
+        <com.jaredrummler.android.colorpicker.ColorPreference
+            app:cpv_dialogTitle="@string/pref_title__dock_background_color"
+            app:cpv_showAlphaSlider="true"
+            android:defaultValue="@color/default_background_dock"
+            android:key="@string/pref_key__dock_background_color"
+            android:summary="@string/pref_title__dock_background_color_summary"
+            android:title="@string/pref_title__dock_background_color" />
+    </PreferenceCategory>
+</PreferenceScreen>

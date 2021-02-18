@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:background="@color/transparent"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <ImageView
+        android:id="@+id/ivSignalStrength"
+        android:layout_width="32dp"
+        android:padding="6dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_signal_cellular_0_bar_white_48dp" />
+
+    <ImageView
+        android:id="@+id/ivLocationStatusBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivSignalStrength"
+        android:layout_alignTop="@+id/tvInternet"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_status_bar_location"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ivLocationStatusBar"
+        android:text="12:30"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:padding="7dp"
+        android:id="@+id/ivInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toLeftOf="@+id/tvBattery"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_signal_wifi_0_bar_white_48dp" />
+
+    <TextView
+        android:id="@+id/tvInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/tvBattery"
+        android:text="100%"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/ivBattery"
+        android:text="100%"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ivBattery"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ivSignalStrength"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_battery_20_white_48dp" />
+</RelativeLayout>

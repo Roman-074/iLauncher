@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgbgBlur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.benny.openlauncher.lock.TextViewSanFranciscoLight
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_bottom_cancle"
+            android:padding="15dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emerency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.benny.openlauncher.lock.TextViewSanFranciscoLight
+            android:id="@+id/btnEmerency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/margin_bottom_cancle"
+            android:padding="15dp"
+            android:text="@string/emerency"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel"
+        android:layout_centerHorizontal="true">
+
+        <include
+            layout="@layout/fragment_lock_passcode_keyboard_nomarl"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="vertical">
+
+        <com.benny.openlauncher.lock.TextViewSanFranciscoLight
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_marginBottom="10dp"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:text="@string/enter_passcode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/enter_number_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/lock_passcode_dot0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/lock_passcode_dot_horizontal"
+                android:src="@drawable/passcode_dot_hollow" />
+
+            <ImageView
+                android:id="@+id/lock_passcode_dot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lock_passcode_dot_horizontal"
+                android:layout_marginRight="@dimen/lock_passcode_dot_horizontal"
+                android:src="@drawable/passcode_dot_hollow" />
+
+            <ImageView
+                android:id="@+id/lock_passcode_dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lock_passcode_dot_horizontal"
+                android:layout_marginRight="@dimen/lock_passcode_dot_horizontal"
+                android:src="@drawable/passcode_dot_hollow" />
+
+            <ImageView
+                android:id="@+id/lock_passcode_dot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lock_passcode_dot_horizontal"
+                android:src="@drawable/passcode_dot_hollow" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

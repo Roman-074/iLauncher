@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4d000000"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/wall_paper_bt_apply"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

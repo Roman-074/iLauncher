@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_title__size">
+        <com.benny.openlauncher.widget.NumberPickerPreference
+            android:defaultValue="4"
+            android:key="@string/pref_key__desktop_columns"
+            android:title="@string/columns" />
+        <com.benny.openlauncher.widget.NumberPickerPreference
+            android:defaultValue="5"
+            android:key="@string/pref_key__desktop_rows"
+            android:title="@string/rows" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_title__appearance">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__desktop_fullscreen"
+            android:summary="@string/pref_title__new_status_bar_message"
+            android:title="@string/pref_title__new_status_bar" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__desktop_show_position_indicator"
+            android:summary="@string/pref_summary__desktop_show_position_indicator"
+            android:title="@string/pref_title__desktop_show_position_indicator" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key__desktop_show_label"
+            android:summary="@string/pref_summary__desktop_show_label"
+            android:title="@string/pref_title__desktop_show_label" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_title__color">
+        <com.jaredrummler.android.colorpicker.ColorPreference
+            app:cpv_dialogTitle="@string/pref_title__desktop_background_color"
+            app:cpv_showAlphaSlider="true"
+            android:defaultValue="@color/transparent"
+            android:key="@string/pref_key__desktop_background_color"
+            android:summary="@string/pref_title__desktop_background_color_summary"
+            android:title="@string/pref_title__desktop_background_color" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlMoreApps"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/settings_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/settings_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:background="?attr/colorPrimary"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/settings_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_above="@+id/adView"
+        android:id="@+id/rlMoreApps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/rlMoreApps_line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/rlMoreApps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlMoreApps_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/settings_more_apps_title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/settings_rcView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlMoreApps_tv"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+    <!--<com.google.android.gms.ads.AdView-->
+        <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/adView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--ads:adSize="BANNER"-->
+        <!--ads:adUnitId="@string/adview">-->
+    <!--</com.google.android.gms.ads.AdView>-->
+</RelativeLayout>

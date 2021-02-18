@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTitleSwipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/splash_swipe_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cbUseWallpaper"
+        android:layout_below="@+id/tvTitleSwipe"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cbUseWallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvStart"
+        android:layout_centerHorizontal="true"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_bt_start_splash"
+        android:padding="10dp"
+        android:text="@string/splash_start_title"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="iLauncher"
+            android:textColor="#ff000000"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

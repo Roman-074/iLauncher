@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lockmain_rcView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvShimmer"
+        android:background="@color/transparent" />
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/tvShimmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/slide_to_unlock_message"
+        android:textColor="@color/dark_grey"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.romainpiel.shimmer:library:1.4.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/d7711564d3a9343fb140f4f09cea29fc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/d7711564d3a9343fb140f4f09cea29fc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/d7711564d3a9343fb140f4f09cea29fc/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.romainpiel.shimmer/library/1.4.0/9f8098a1b8f6967f35f621caeb6fa8c2c8fdb450/library-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

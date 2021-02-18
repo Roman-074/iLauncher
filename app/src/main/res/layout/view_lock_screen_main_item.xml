@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/lock_screen_main_bt_notification">
+
+    <RelativeLayout
+        android:id="@+id/item_rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_rlHeader_ivIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/item_rlHeader_tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/item_rlHeader_tvTime"
+            android:layout_toRightOf="@+id/item_rlHeader_ivIcon"
+            android:textColor="#ff444444" />
+
+        <TextView
+            android:id="@+id/item_rlHeader_tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ff444444"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_rlHeader"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/item_ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_tvTitle"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/item_tvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tvTitle"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/item_ivIcon"
+        android:textColor="#ff070707" />
+</RelativeLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/keyboard_pass_code_title"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <ImageView
+
+            android:id="@+id/imgPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pas7" />
+        <LinearLayout
+            android:id="@+id/llDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/ivDot0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/keyboard_passcode_bg_iv_dot_small" />
+
+            <ImageView
+                android:id="@+id/ivDot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/keyboard_size_dot_small_margin_left"
+                android:background="@drawable/keyboard_passcode_bg_iv_dot_small" />
+
+            <ImageView
+                android:id="@+id/ivDot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/keyboard_size_dot_small_margin_left"
+                android:background="@drawable/keyboard_passcode_bg_iv_dot_small" />
+
+            <ImageView
+                android:id="@+id/ivDot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/keyboard_size_dot_small_margin_left"
+                android:background="@drawable/keyboard_passcode_bg_iv_dot_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyboard_size_line_number_margin_top"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyboard_size_line_number_margin_top"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyboard_size_line_number_margin_top"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keyboard_size_line_number_margin_top"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/tv0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/keyboard_passcode_bg_number_selector"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/keyboard_size_number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

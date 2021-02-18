@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ibBgLockScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/w1" />
+
+    <RelativeLayout
+        android:id="@+id/rlStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/rlStatusBar_ivSignalStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_signal_cellular_0_bar_white_48dp" />
+
+        <ImageView
+            android:id="@+id/rlStatusBar_ivLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/rlStatusBar_ivSignalStrength"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_status_bar_location"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rlStatusBar_tvNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/rlStatusBar_ivTaiTho"
+            android:layout_toRightOf="@+id/rlStatusBar_ivLocation"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Viettel"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/rlStatusBar_ivTaiTho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ip_taitho" />
+
+        <ImageView
+            android:id="@+id/rlStatusBar_ivInternet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/rlStatusBar_tvBattery"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_signal_wifi_0_bar_white_48dp" />
+
+        <TextView
+            android:id="@+id/rlStatusBar_tvInternet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/rlStatusBar_tvBattery"
+            android:text="LTE"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rlStatusBar_tvBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/rlStatusBar_ivBattery"
+            android:text="100%"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/rlStatusBar_ivBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_battery_20_white_48dp" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlStatusBar" />
+</RelativeLayout>

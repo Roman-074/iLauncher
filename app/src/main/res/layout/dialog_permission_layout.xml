@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:text="App needs new permission. Please enable permission on the next screen."
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="Step 1:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/layout_notify_step1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtStep1notify"
+                        android:textColor="@color/op_blue"
+                        android:textSize="16sp"
+                        android:padding="3dp"
+
+                        android:text="Notification access"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@+id/txtStep1notify"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp">
+                        <ImageView
+
+                            android:id="@+id/dialog_permission_img_step_1"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="4dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_permission_img_step_1"
+                            android:gravity="center_vertical"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="32dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/background_permission"
+                            android:src="@drawable/ic_switch_off" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_app_usage_step1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginLeft="6dp"
+                        android:padding="4dp"
+                        android:textColor="@color/op_blue"
+                        android:textSize="16sp"
+                        android:text="Apps with usage access"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:background="@drawable/background_permission"
+                        android:layout_width="wrap_content"
+                       android:padding="6dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgAppusageStep1"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/background_permssion2"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            android:paddingTop="8dp"
+                            android:layout_toRightOf="@+id/imgAppusageStep1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:text="@string/app_name"
+                                android:paddingRight="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:layout_marginTop="4dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="20dp"
+                                android:text="Not Allowed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="Step 2:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+               <LinearLayout
+                   android:visibility="gone"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="15dp"
+                   android:id="@+id/layout_notify_step2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:text="@string/alow_notify"
+                       android:textSize="16sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_marginRight="5dp"
+                       android:layout_marginTop="10dp"
+                       android:textColor="@color/black"
+                       android:text="@string/dsc_notify_ilauncher"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+                <!--<ProgressBar-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true" />-->
+               <LinearLayout
+
+                   android:orientation="vertical"
+                   android:id="@+id/layout_app_usage_step2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:padding="8dp"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16sp"
+                       android:text="Usage access"
+                       android:background="@color/default_background_icon"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:gravity="center_vertical"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="4dp"
+                           android:text="Permit usage access "
+                           android:padding="8dp"
+                           android:textColor="@color/black"
+                           android:textSize="16sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                       <ImageView
+                           android:src="@drawable/ic_switch"
+                           android:background="@drawable/background_permission"
+                           android:layout_alignParentRight="true"
+                           android:layout_width="64dp"
+                           android:layout_height="48dp" />
+                   </RelativeLayout>
+                   <TextView
+                       android:layout_marginTop="6dp"
+                       android:textSize="15sp"
+                       android:padding="4dp"
+                       android:layout_marginLeft="4dp"
+                       android:textColor="@color/black"
+                       android:text="@string/dsc_usage"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+                <ImageView
+
+                    android:id="@+id/dialog_permission_img_step_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:text="YES"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:text="NO"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

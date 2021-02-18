@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#a1000000"
+        android:visibility="invisible" />
+
+    <com.benny.openlauncher.customview.StatusBar
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.benny.openlauncher.core.widget.Desktop
+        android:id="@+id/desktop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/desktopIndicator"
+        />
+
+    <com.benny.openlauncher.core.widget.PagerIndicator
+        android:id="@+id/desktopIndicator"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/dock"
+         />
+
+    <com.benny.openlauncher.core.widget.Dock
+        android:id="@+id/dock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.benny.openlauncher.core.widget.DesktopOptionView
+        android:id="@+id/desktopEditOptionPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+ />
+
+    <com.benny.openlauncher.core.widget.DragOptionView
+        android:id="@+id/dragOptionPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/light_background"
+        app:cardCornerRadius="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.benny.openlauncher.core.widget.GroupPopupViewNew
+        android:id="@+id/groupPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <View
+        android:id="@+id/left"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:alpha="0.0"
+        android:background="@drawable/action_new_page"
+        android:translationX="-6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/desktop"
+        app:layout_constraintLeft_toLeftOf="@+id/desktop"
+        app:layout_constraintTop_toTopOf="@+id/desktop" />
+
+
+    <View
+        android:id="@+id/right"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:alpha="0.0"
+        android:background="@drawable/action_new_page"
+        android:translationX="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/desktop"
+        app:layout_constraintRight_toRightOf="@+id/desktop"
+        app:layout_constraintTop_toTopOf="@+id/desktop" />
+</android.support.constraint.ConstraintLayout>

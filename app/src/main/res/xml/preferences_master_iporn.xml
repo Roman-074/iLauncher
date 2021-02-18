@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key__on_off_iporn"
+        android:title="@string/pref_key__on_off_iporn_title" />
+    <Preference
+        android:icon="@drawable/ic_home_black_24dp"
+        android:key="@string/pref_key__cat_default_launcher"
+        android:title="@string/pref_title__default_launcher" />
+    <Preference
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:key="@string/pref_key__cat_control_center"
+        android:title="@string/pref_title__control_center" />
+    <Preference
+        android:icon="@drawable/ic_desktop_windows_dark_24dp"
+        android:key="@string/pref_key__cat_desktop"
+        android:title="@string/pref_title__desktop" />
+    <Preference
+        android:icon="@drawable/ic_dock_dark_24dp"
+        android:key="@string/pref_key__cat_dock"
+        android:title="@string/pref_title__dock" />
+    <com.benny.openlauncher.widget.NumberPickerPreference1
+        android:defaultValue="46"
+        android:icon="@drawable/ic_android_dark_24dp"
+        android:key="@string/pref_key__icon_size"
+        android:title="@string/pref_title__icon_size" />
+    <com.benny.openlauncher.widget.EffectDesktopPickerPreference
+        android:defaultValue="0"
+        android:icon="@drawable/ic_view_carousel_black_24dp"
+        android:key="@string/pref_key_effect_desktop"
+        android:title="@string/pref_title__effect_desktop"
+         />
+    <Preference
+        android:icon="@drawable/ic_image_black_24dp"
+        android:key="@string/pref_key__cat_wallpaper"
+        android:title="@string/pref_title__wallpaper" />
+    <Preference
+        android:icon="@drawable/ic_lock_black_24dp"
+        android:key="@string/pref_key__lock_screen_settings"
+        android:title="@string/pref_title__lock_screen" />
+    <Preference
+        android:icon="@drawable/ic_share_black_24dp"
+        android:key="@string/pref_key__share_friends"
+        android:title="Share Friend" />
+</PreferenceScreen>

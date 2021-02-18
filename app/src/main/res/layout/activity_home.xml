@@ -1,0 +1,257 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<!--<android.support.v4.widget.DrawerLayout--><!--android:id="@+id/drawer_layout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<!--&lt;!&ndash; The main content view &ndash;&gt;--><!--<include layout="@layout/view_home" />-->
+
+<!--&lt;!&ndash; The navigation drawer &ndash;&gt;--><!--<FrameLayout--><!--android:id="@+id/minibar_background"--><!--android:layout_width="wrap_content"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="start"--><!--android:background="@color/colorPrimary">-->
+
+<!--<com.benny.openlauncher.core.widget.SwipeListView--><!--android:id="@+id/minibar"--><!--android:layout_width="74dp"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_vertical|start"--><!--android:clipToPadding="true"--><!--android:divider="@android:color/transparent"--><!--android:dividerHeight="0dp"--><!--android:listSelector="@android:color/transparent"--><!--android:scrollbars="none" />-->
+
+<!--</FrameLayout>-->
+
+<!--</android.support.v4.widget.DrawerLayout>-->
+
+<!--</FrameLayout>-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_home" />
+
+    <FrameLayout
+        android:id="@+id/loadingSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000">
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+        </ProgressBar>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llHelpSwipeDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/help_swipe" />
+
+        <TextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:text="@string/help_swipe_down_to_search"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivSwipeIcSearch"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_swipe_ic_search"
+        android:padding="5dp"
+        android:src="@drawable/ic_search_orange_48dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlSearchBarOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:alpha="0.0"
+            android:orientation="vertical"
+            android:translationY="-100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_search_bar_activity"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlEtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:padding="8dp"
+                        android:id="@+id/ivBack"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_arrow_back_gray_48dp" />
+
+                    <ImageView
+                        android:id="@+id/ivShop"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_shop_gray_48dp" />
+
+                    <EditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/ivShop"
+                        android:layout_toRightOf="@+id/ivBack"
+                        android:background="@color/transparent"
+                        android:hint="@string/search_bar_title"
+                        android:textColorHint="#ffacacac" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="#ffb0b0b0" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llHelpPermissionDraw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff1d2b38"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/request_permissiton_draw_title"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgHelp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp" />
+                    <TextView
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="@string/app_name"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/imgHelp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="@string/permit_help"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@drawable/ic_switch_off"
+                        android:layout_marginRight="6dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="48dp"
+                        android:layout_height="36dp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/dsc_help"
+                    android:textColor="@color/intro_button_color"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/request_permissiton_draw_message"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btOpenPermissionDraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/request_permissiton_draw_title_button"
+                android:textColor="#ff1d2b38" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

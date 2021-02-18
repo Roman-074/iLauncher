@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/dialog_edit_icon_rlIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dialog_edit_icon_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/dialog_edit_icon_bg_iv" />
+
+            <TextView
+                android:id="@+id/dialog_edit_icon_tvChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_edit_icon_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dialog_edit_icon_title_change"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/dialog_edit_icon_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dialog_edit_icon_rlIv"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

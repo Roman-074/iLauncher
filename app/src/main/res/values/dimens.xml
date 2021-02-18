@@ -1,0 +1,27 @@
+<resources>
+    <dimen name="default_margin_0_5">4dp</dimen>
+    <dimen name="default_margin_1">8dp</dimen>
+    <dimen name="default_margin_2">16dp</dimen>
+
+    <dimen name="activity_margin">@dimen/default_margin_2</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="control_center_margin_half">8dp</dimen>
+    <dimen name="control_center_margin">16dp</dimen>
+    <dimen name="keyboard_size_dot_small_margin_left">20dp</dimen>
+    <dimen name="keyboard_size_line_number_margin_top">15dp</dimen>
+    <dimen name="keyboard_size_number">30sp</dimen>
+    <dimen name="cicle_stroke">2dp</dimen>
+    <dimen name="size_circle_btn">85dp</dimen>
+    <dimen name="padding_rcView">4dp</dimen>
+    <dimen name="distance_menu_touch">40dp</dimen>
+    <dimen name="size_passcode_dot">15dp</dimen>
+    <dimen name="margin_bottom_cancle">10dp</dimen>
+    <dimen name="enter_number_size">22dp</dimen>
+    <dimen name="lock_passcode_dot_horizontal">12dp</dimen>
+    <dimen name="number_size">30sp</dimen>
+    <dimen name="margin_btn_keyboard">8dp</dimen>
+    <dimen name="text_number_size">10sp</dimen>
+    <dimen name="dialog_edit_icon_iv_size">60dp</dimen>
+    <dimen name="select_icon_padding_rcview">5dp</dimen>
+    />
+</resources>

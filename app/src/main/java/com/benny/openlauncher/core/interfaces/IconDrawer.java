@@ -1,0 +1,9 @@
+package com.benny.openlauncher.core.interfaces;
+
+import android.graphics.drawable.Drawable;
+
+public interface IconDrawer {
+    void onIconAvailable(Drawable drawable, int i);
+
+    void onIconCleared(Drawable drawable, int i);
+}

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+    <ImageView
+        android:id="@+id/ivCollapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/arrow_down_2" />
+
+    <LinearLayout
+
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll2"
+        android:layout_marginLeft="@dimen/control_center_margin_half"
+        android:layout_marginRight="@dimen/control_center_margin_half"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/control_center_margin_half"
+            android:layout_marginRight="@dimen/control_center_margin_half"
+            android:layout_weight="1.0"
+            android:background="@drawable/control_center_bg_bt_4x4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivAir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_center_margin_half"
+                    android:layout_marginLeft="@dimen/control_center_margin"
+                    android:layout_marginRight="@dimen/control_center_margin_half"
+                    android:layout_marginTop="@dimen/control_center_margin"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/control_center_bg_bt_circle_air"
+                    android:src="@drawable/ic_airplanemode" />
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_center_margin_half"
+                    android:layout_marginLeft="@dimen/control_center_margin_half"
+                    android:layout_marginRight="@dimen/control_center_margin"
+                    android:layout_marginTop="@dimen/control_center_margin"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/control_center_bg_bt_circle_data_mobile"
+                    android:src="@drawable/ic_location_off_white_48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivWifi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_center_margin"
+                    android:layout_marginLeft="@dimen/control_center_margin"
+                    android:layout_marginRight="@dimen/control_center_margin_half"
+                    android:layout_marginTop="@dimen/control_center_margin_half"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/control_center_bg_bt_circle_wifi_bluetooth"
+                    android:src="@drawable/ic_wifi" />
+
+                <ImageView
+                    android:id="@+id/ivBlueTooth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/control_center_margin"
+                    android:layout_marginLeft="@dimen/control_center_margin_half"
+                    android:layout_marginRight="@dimen/control_center_margin"
+                    android:layout_marginTop="@dimen/control_center_margin_half"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/control_center_bg_bt_circle_wifi_bluetooth"
+                    android:src="@drawable/ic_bluetooth" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llSelectMusicPlayer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/control_center_margin_half"
+            android:layout_marginRight="@dimen/control_center_margin_half"
+            android:layout_weight="1.0"
+            android:background="@drawable/control_center_bg_bt_music_player"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/ivMusicPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_settings_white_48dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tvLabelMusicPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/control_center_select_music_player_title"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/control_center_margin_half"
+                android:layout_marginRight="@dimen/control_center_margin_half"
+                android:layout_weight="1.0"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivPrev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="@dimen/control_center_margin_half"
+                    android:paddingRight="@dimen/control_center_margin_half"
+                    android:src="@drawable/ic_skip_previous_white_48dp" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivPlay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="@dimen/control_center_margin_half"
+                    android:paddingRight="@dimen/control_center_margin_half"
+                    android:src="@drawable/ic_play_arrow_white_48dp" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivNext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="@dimen/control_center_margin_half"
+                    android:paddingRight="@dimen/control_center_margin_half"
+                    android:src="@drawable/ic_skip_next_white_48dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll1"
+        android:layout_marginLeft="@dimen/control_center_margin_half"
+        android:layout_marginRight="@dimen/control_center_margin_half"
+        android:layout_marginTop="@dimen/control_center_margin_half"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/ivRotation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/control_center_margin_half"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/control_center_bg_bt"
+                        android:src="@drawable/ic_unlock_rotate" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/ivMute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/control_center_margin_half"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/control_center_bg_bt"
+                        android:src="@drawable/ic_silent" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/control_center_margin_half"
+                android:layout_weight="1.0"
+                android:background="@drawable/control_center_bg_bt_sleep">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_white_48dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/control_center_home_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/rlBrightness"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/control_center_margin_half"
+                android:layout_weight="1.0"
+                android:background="@drawable/control_center_bg_bt_brightness_volume">
+
+                <View
+                    android:id="@+id/rlBrightness_Selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/control_center_bg_bt_brightness_volume_selected" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_brightness_0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlVolume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/control_center_margin_half"
+                android:layout_weight="1.0"
+                android:background="@drawable/control_center_bg_bt_brightness_volume">
+
+                <View
+                    android:id="@+id/rlVolume_Selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/control_center_bg_bt_brightness_volume_selected" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_volume_1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewFooter"
+        android:layout_marginBottom="@dimen/control_center_margin_half"
+        android:layout_marginLeft="@dimen/control_center_margin_half"
+        android:layout_marginRight="@dimen/control_center_margin_half"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/ivFlashLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/control_center_margin_half"
+                android:adjustViewBounds="true"
+                android:background="@drawable/control_center_bg_bt"
+                android:src="@drawable/ic_flash" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/ivTethering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/control_center_margin_half"
+                android:adjustViewBounds="true"
+                android:background="@drawable/control_center_bg_bt"
+                android:src="@drawable/ic_wifi_tethering_white_48dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/ivBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/control_center_margin_half"
+                android:adjustViewBounds="true"
+                android:background="@drawable/control_center_bg_bt"
+                android:src="@drawable/ic_brightness_auto_white_48dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/control_center_margin_half"
+                android:adjustViewBounds="true"
+                android:background="@drawable/control_center_bg_bt"
+                android:src="@drawable/ic_camera" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewFooter"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent" />
+
+</RelativeLayout>

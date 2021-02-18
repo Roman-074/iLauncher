@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/ivBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/w1" />
+
+    <RelativeLayout
+        android:id="@+id/rlActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back_white_24px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/select_icon_tvDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlActionbar"
+        android:layout_margin="10dp"
+        android:text="@string/select_icon_title_default"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/select_icon_ivDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_icon_tvDefault"
+        android:layout_marginLeft="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlChoseFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_icon_ivDefault">
+
+        <TextView
+            android:id="@+id/select_icon_tvChoseFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/select_icon_title_chose_file"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/select_icon_tvAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlChoseFile"
+        android:layout_margin="10dp"
+        android:text="@string/select_icon_title_available"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/select_icon_rcView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/select_icon_tvAvailable" />
+</RelativeLayout>
