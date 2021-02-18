@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iPhoneLauncherProject.iml" filepath="$PROJECT_DIR$/.idea/modules/iPhoneLauncherProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/iPhoneLauncherProject.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/iPhoneLauncherProject.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iLauncher.iml" filepath="$PROJECT_DIR$/.idea/modules/iLauncher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/iLauncher.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/iLauncher.app.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="36dp"
     android:background="@color/transparent"
@@ -12,15 +13,16 @@
         android:padding="6dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="8dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_signal_cellular_0_bar_white_48dp" />
 
     <ImageView
         android:id="@+id/ivLocationStatusBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/ivSignalStrength"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ivSignalStrength"
         android:layout_alignTop="@+id/tvInternet"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_status_bar_location"
@@ -31,8 +33,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/ivLocationStatusBar"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/ivLocationStatusBar"
         android:text="12:30"
         android:textColor="@color/white"
         android:textSize="13sp" />
@@ -42,8 +44,8 @@
         android:id="@+id/ivInternet"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginLeft="2dp"
-        android:layout_toLeftOf="@+id/tvBattery"
+        android:layout_marginStart="2dp"
+        android:layout_toStartOf="@+id/tvBattery"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_signal_wifi_0_bar_white_48dp" />
 
@@ -52,8 +54,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginRight="5dp"
-        android:layout_toLeftOf="@+id/tvBattery"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tvBattery"
         android:text="100%"
         android:textColor="@color/white"
         android:textSize="13sp"
@@ -64,8 +66,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginRight="5dp"
-        android:layout_toLeftOf="@+id/ivBattery"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/ivBattery"
         android:text="100%"
         android:textColor="@color/white"
         android:textSize="12sp" />
@@ -77,5 +79,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/ivSignalStrength"
         android:adjustViewBounds="true"
-        android:src="@drawable/ic_battery_20_white_48dp" />
+        android:src="@drawable/ic_battery_20_white_48dp"
+        android:layout_marginEnd="8dp"
+        />
+
 </RelativeLayout>
