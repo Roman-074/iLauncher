@@ -40,8 +40,7 @@ public class BaseActivity extends AppCompatActivity {
     private class DownloadFileApk extends AsyncTask<String, Integer, String> {
         private ProgressDialog pDialog;
 
-        private DownloadFileApk() {
-        }
+        private DownloadFileApk() { }
 
         protected void onPreExecute() {
             super.onPreExecute();
@@ -103,8 +102,11 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
+
+
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        android.util.Log.d("my", "onCreate: BaseActivity");
         this.baseApplication = (BaseApplication) getApplication();
         this.activity = this;
     }
@@ -186,4 +188,5 @@ public class BaseActivity extends AppCompatActivity {
             BaseUtils.gotoUrl(this, this.baseApplication.getBaseConfig().getUpdate().getUrl_store());
         }
     }
+
 }

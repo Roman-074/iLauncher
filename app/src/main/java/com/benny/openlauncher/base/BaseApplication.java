@@ -21,6 +21,7 @@ import okhttp3.OkHttpClient;
 
 
 public class BaseApplication extends Application {
+
     public static final String EVENTS_NAME_CLICK_ICON_ON_SEARCH_BAR = "custom_events_icon_search_bar";
     public static final String EVENTS_NAME_CLICK_ICON_SETTINGS = "custom_events_icon_settings";
     public static final String EVENTS_NAME_DAY = "custom_events_day_";
@@ -146,4 +147,5 @@ public class BaseApplication extends Application {
         } catch (Exception e) {
         }
     }
+
 }
