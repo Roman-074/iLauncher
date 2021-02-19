@@ -100,6 +100,7 @@ public abstract class Home extends BaseActivity implements OnDesktopEditListener
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("my", "onCreate: Home core");
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
         this.baseApplication.widthPixels = metrics.widthPixels;

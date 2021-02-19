@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.benny.openlauncher">
+    package="com.benny.openlauncher"
+    >
 
 <!--                                      ANDROID  PERMISSION                                    -->
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
@@ -63,7 +65,6 @@
     <permission
         android:name="com.benny.openlauncher.permission.C2D_MESSAGE"
         android:protectionLevel="signature|signatureOrSystem" />
-    <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera" />
 
 
