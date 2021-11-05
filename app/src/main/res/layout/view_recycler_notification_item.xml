@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/notification_item_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+        app:cardBackgroundColor="@color/whiteAlpha30"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/notification_item_blur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/notification_item_img_app_icon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/notification_item_txt_app_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:textAllCaps="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/notification_item_img_app_icon"
+                    app:layout_constraintEnd_toStartOf="@+id/notification_item_txt_time"
+                    app:layout_constraintStart_toEndOf="@id/notification_item_img_app_icon"
+                    app:layout_constraintTop_toTopOf="@+id/notification_item_img_app_icon"
+                    tools:text="@string/notification_item_title" />
+
+                <TextView
+                    android:id="@+id/notification_item_txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:text="@string/notification_time_started"
+                    app:layout_constraintBottom_toBottomOf="@+id/notification_item_img_app_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/notification_item_img_app_icon"
+
+                    />
+
+                <TextView
+                    android:id="@+id/notification_item_txt_action"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/notification_item_txt_time"
+                    app:layout_constraintStart_toStartOf="@id/notification_item_img_app_icon"
+                    app:layout_constraintTop_toBottomOf="@id/notification_item_img_app_icon"
+                    tools:text="Andrey" />
+
+                <TextView
+                    android:id="@+id/notification_item_txt_main_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@id/notification_item_txt_action"
+                    app:layout_constraintStart_toStartOf="@id/notification_item_txt_action"
+                    app:layout_constraintTop_toBottomOf="@id/notification_item_txt_action"
+                    tools:text="Hello" />
+
+                <TextView
+                    android:id="@+id/notification_item_txt_additional_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/notification_item_txt_main_info"
+                    app:layout_constraintStart_toStartOf="@id/notification_item_txt_main_info"
+                    app:layout_constraintTop_toBottomOf="@id/notification_item_txt_main_info"
+                    tools:text="@string/notification_item_text_set" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

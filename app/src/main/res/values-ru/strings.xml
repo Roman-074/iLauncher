@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <!-- ================================  COMMON =======================================   -->
+    <string name="text_open">Открыть</string>
+    <string name="text_cancel">Отклонить</string>
+    <string name="text_ok">Разрешить</string>
+    <string name="text_clear">Очистить</string>
+
+    <!-- ================================  PERMISSIONS =======================================   -->
+    <string name="permissions_notification_info">
+        Приложение iPhone Launcher получит возможность читать все получаемые вами уведомления,
+        которые могут включать личные сведения, такие как отправляемые вам контакты и сообщения.
+        Оно также сможет закрывать уведомления или выбирать для них другие действия. Предоставление
+        доступа к уведомлениям может повлиять на производительность телефона
+    </string>
+    <string name="permissions_notification_text_status">Разрешить iPhone 12 лаунчер</string>
+    <string name="permission_text_head">Требуются дополнительные разрешения</string>
+    <string name="permission_overlay_text_info">Пожалуйста, включите разрешение рисования поверх других приложений, чтобы приложение было полнофункциональным</string>
+    <string name="permissions_write_settings_text">Для выполнения этого действия приложению требуется разрешение на запись настроек. Нажмите "разрешить", чтобы предоставить приложению доступ</string>
+    <string name="permissions_access">Нет разрешения!</string>
+
+    <!-- ================================  GET STARTED =======================================   -->
+    <string name="get_started_top_text">Проведите пальцем по экрану, чтобы выбрать обои</string>
+    <string name="get_started_bottom_text">Использовать обои для запуска приложений</string>
+    <string name="get_started_button_text">Согласиться и продолжить</string>
+
+    <!-- ================================  GET STARTED =======================================   -->
+    <string name="onboarding_top_text_notification">Доступ к уведомлениям</string>
+    <string name="onboarding_top_text_write_settings">Редактирование системных настроек</string>
+    <string name="onboarding_overlay_top_text">Наложение поверх других приложений</string>
+    <string name="onboarding_overlay_bottom_text">Пожалуйста, включите разрешения, чтобы приложение было полнофункциональным</string>
+    <string name="onboarding_overlay_button_text">Включить</string>
+
+    <!-- ================================  STATUS BAR =======================================   -->
+    <string name="status_bar_mobile_provider">MTS RU</string>
+    <string name="status_bar_buttery_value">100%</string>
+
+    <!-- ==============================  FAST SETTINGS  ======================================   -->
+    <string name="fs_music_text">Управление музыкой</string>
+    <string name="text_home">Домой</string>
+
+    <!-- ==============================  NOTIFICATIONS  ======================================   -->
+    <string name="notification_time_started">00:00</string>
+    <string name="notification_date_started">Пятница, 2 марта</string>
+    <string name="notification_item_text_set">Еще 1 уведомление от Андрея</string>
+
+    <!-- ==================================  SEARCH  =========================================   -->
+    <string name="search_place_hint">Поиск...</string>
+    <string name="notification_item_title">Приложение</string>
+
+    <!-- ==================================  HELP  =========================================   -->
+    <string name="help_swipe_up_to_cc">Проведите пальцем вниз от левого угла, чтобы увидеть экран уведомлений</string>
+    <string name="help_notification_center">Экран \n уведомлений</string>
+    <string name="help_control_center">Экран быстрых \n настроек</string>
+    <string name="help_swipe_2_text">Проведите вниз, чтобы открыть </string>
+    <string name="help_recent_task">Недавние \n задачи</string>
+    <string name="help_swipe_3_text_main">Проведите вверх, чтобы открыть панель навигации</string>
+    <string name="help_search_page">Проведите пальцем вниз по рабочему столу, чтобы открыть страницу поиска</string>
+    <string name="text_wait_a_minute">Загрузка...</string>
+
+</resources>

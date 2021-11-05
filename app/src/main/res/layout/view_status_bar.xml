@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hedgehog.tech.ilauncher.customview.ilauncher.intercept.InterceptConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_26sdp"
+    android:id="@+id/status_bar_frame"
+    >
+
+
+    <!-- ====================== LEFT ============================-->
+    <ImageView
+        android:id="@+id/status_bar_mobile_signal_img"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_white_mobile_signal_full"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/status_bar_mobile_signal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="@string/status_bar_mobile_provider"
+        android:textColor="#fff"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/status_bar_mobile_signal_img"
+        app:layout_constraintStart_toEndOf="@+id/status_bar_mobile_signal_img"
+        app:layout_constraintTop_toTopOf="@+id/status_bar_mobile_signal_img" />
+
+    <TextView
+        android:id="@+id/status_bar_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="@string/notification_time_started"
+        android:textColor="#fff"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/status_bar_wifi"
+        app:layout_constraintStart_toEndOf="@+id/status_bar_wifi"
+        app:layout_constraintTop_toTopOf="@+id/status_bar_wifi" />
+
+    <ImageView
+        android:id="@+id/status_bar_wifi"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_white_wifi_enabled"
+        app:layout_constraintBottom_toBottomOf="@+id/status_bar_mobile_signal_text"
+        app:layout_constraintStart_toEndOf="@+id/status_bar_mobile_signal_text"
+        app:layout_constraintTop_toTopOf="@+id/status_bar_mobile_signal_text" />
+
+
+
+    <!-- ====================== RIGHT ============================-->
+    <ImageView
+        android:id="@+id/status_bar_sound_mode"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fs_ic_sound_mode_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/status_bar_block_orientation"
+        app:layout_constraintEnd_toStartOf="@+id/status_bar_block_orientation"
+        app:layout_constraintTop_toTopOf="@+id/status_bar_block_orientation" />
+
+    <ImageView
+        android:id="@+id/status_bar_block_orientation"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:src="@drawable/fs_ic_lock_rotation_white"
+        app:layout_constraintBottom_toBottomOf="@+id/status_bar_location"
+        app:layout_constraintEnd_toStartOf="@+id/status_bar_location"
+        app:layout_constraintTop_toTopOf="@+id/status_bar_location" />
+
+    <ImageView
+        android:id="@+id/status_bar_location"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_white_location"
+        app:layout_constraintBottom_toBottomOf="@+id/status_bar_buttery_text"
+        app:layout_constraintEnd_toStartOf="@+id/status_bar_buttery_text"
+        app:layout_constraintTop_toTopOf="@+id/status_bar_buttery_text" />
+
+    <TextView
+        android:id="@+id/status_bar_buttery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="@string/status_bar_buttery_value"
+        android:textColor="#fff"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/status_bar_buttery_img"
+        app:layout_constraintEnd_toStartOf="@+id/status_bar_buttery_img"
+        app:layout_constraintTop_toTopOf="@+id/status_bar_buttery_img" />
+
+    <ImageView
+        android:id="@+id/status_bar_buttery_img"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_battery_white_100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</hedgehog.tech.ilauncher.customview.ilauncher.intercept.InterceptConstraintLayout>

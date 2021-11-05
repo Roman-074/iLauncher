@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search_root_frame"
+    >
+
+<!--    ============================   EDIT FRAME   ============================  -->
+    <LinearLayout
+        android:id="@+id/search_edit_frame_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="@dimen/_16sdp"
+        >
+
+        <LinearLayout
+            android:background="@drawable/bg_edittext_search"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp">
+
+            <LinearLayout
+                android:id="@+id/search_edit_frame"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                >
+                <ImageButton
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_search"
+                    android:visibility="visible"
+                    />
+
+                <EditText
+                    android:id="@+id/search_edit_text"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:hint="@string/search_place_hint"
+                    android:textColorHint="@color/white"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/search_microphone"
+                android:visibility="visible"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_white_microphone"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"
+            android:text="@string/text_cancel"/>
+    </LinearLayout>
+
+<!--    ============================   CLICK FRAME   ============================  -->
+    <FrameLayout
+        android:id="@+id/search_button_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/bg_edittext_search"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/search_button_inner_view"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8sdp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toStartOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="@string/search_place_hint"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

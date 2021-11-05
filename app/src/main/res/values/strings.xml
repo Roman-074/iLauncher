@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================================  COMMON =======================================   -->
+    <string name="text_open">Open</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_ok">OK</string>
+    <string name="text_clear">Clear</string>
+    <string name="text_home">Home</string>
+    <string name="text_back" translatable="false">Back</string>
+
+    <!-- ================================  PERMISSIONS =======================================   -->
+    <string name="permissions_notification_info">
+        The iPhone Launcher app will be able to read all the notifications you receive, which may
+        include personal information, such as contacts and messages sent to you. It will also be
+        able to close notifications or select other actions for them. Providing access to
+        notifications can affect the performance of the phone
+    </string>
+    <string name="permissions_notification_text_status">Enable iPhone 12 Launcher</string>
+    <string name="permission_text_head">Additional permissions required</string>
+    <string name="permission_overlay_text_info">Please enable Draw over other apps permission so that the application can work perfectly</string>
+    <string name="permissions_write_settings_text">To perform this action app needs permission for write settings. Press OK to grant access to app</string>
+    <string name="permissions_access">Permission denied!</string>
+
+    <!-- ================================  GET STARTED =======================================   -->
+    <string name="get_started_top_text">Swipe to select wallpaper</string>
+    <string name="get_started_bottom_text">Use Apps Launcher Wallpaper</string>
+    <string name="get_started_button_text">Get Started</string>
+
+    <!-- ================================  ONBOARDING =======================================   -->
+    <string name="onboarding_top_text_notification">Notification access</string>
+    <string name="onboarding_top_text_write_settings">Get write settings</string>
+    <string name="onboarding_overlay_top_text">Draw over other apps</string>
+    <string name="onboarding_overlay_bottom_text">Please enable permissions so that the application can work perfectly</string>
+    <string name="onboarding_overlay_button_text">OK, Enable Now</string>
+
+    <!-- ================================  STATUS BAR =======================================   -->
+    <string name="status_bar_mobile_provider">MTS RU</string>
+    <string name="status_bar_buttery_value">100%</string>
+
+    <!-- ==============================  FAST SETTINGS  ======================================   -->
+    <string name="fs_music_text">Music Control</string>
+
+    <!-- ==============================  NOTIFICATIONS  ======================================   -->
+    <string name="notification_time_started">00:00</string>
+    <string name="notification_date_started">Tuesday, 2 March</string>
+    <string name="notification_item_text_set">1 more notification from Andrey</string>
+
+    <!-- ==================================  SEARCH  =========================================   -->
+    <string name="search_place_hint">Search</string>
+    <string name="notification_item_title">APP</string>
+
+
+    <!-- ==================================  HELP  =========================================   -->
+    <string name="help_swipe_up_to_cc">Swipe down from left corner to see Notification Center</string>
+    <string name="help_notification_center">Notification \n Center</string>
+    <string name="help_control_center">Control \n Center</string>
+    <string name="help_swipe_2_text">Swipe down from status bar</string>
+    <string name="help_recent_task">Recent \n task</string>
+    <string name="help_swipe_3_text_main">Swipe up for Navigation Bar</string>
+    <string name="help_search_page">Swipe down in the desktop to show Search Page</string>
+    <string name="text_wait_a_minute">Wait a minute...</string>
+
+
+</resources>

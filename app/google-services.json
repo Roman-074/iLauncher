@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668163827480",
+    "project_id": "ilauncher-54bb0",
+    "storage_bucket": "ilauncher-54bb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668163827480:android:6cf2001052b14ab78a606d",
+        "android_client_info": {
+          "package_name": "hedgehog.tech.ilauncher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668163827480-dh0vgtnru7i5jo2hlkejcuk8dp0eg9rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPvJ3EUX7GM_cBJcBVZrtTeEAaEklR-YQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668163827480-dh0vgtnru7i5jo2hlkejcuk8dp0eg9rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

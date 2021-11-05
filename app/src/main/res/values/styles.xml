@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Launcher_Style" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--  в лаунчере должен быть прозрачный фон главного окна        -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <!-- прозрачность остальных компонентов приложения        -->
+        <item name="colorOnBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+
+        <!--  todo заменено на WindowInsetsControllerCompat       -->
+        <!-- включаем полноэкранный режим        -->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowActionBar">false</item>-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="android:clipToPadding">false</item>-->
+
+        <!-- без этих свойств на 11 андроиде Xiaomi навбар становится белым, а не прозрачным -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!--  автоматичесий ресайз экрана относительно системных панелей       -->
+<!--        <item name="android:fitsSystemWindows">true</item>-->
+
+        <!--  отключение темной темы -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <!--        -->
+        <!-- для телефонов с выемкой: отображение интерфейса по обе стороны от моноброви        -->
+        <!-- + на Xiaomi почему-то за монобровь считается весь статус-бар) видимо это их фича в новой прошивке       -->
+        <!-- (данная проблема с Xiaomi также уходит)       -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+
+        <!--  цвета-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/Light.TextColor</item>
+        <item name="android:textColor">@color/Light.TextColor</item>
+        <item name="android:textColorSecondary">@color/Light.TextColorSecondary</item>
+
+    </style>
+
+
+    <!--    Top Sheet  -->
+    <style name="Theme.Design.TopSheetDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.TopSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Widget.Design.TopSheet.Modal</item>
+    </style>
+
+    <style name="Animation.Design.TopSheetDialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/top_sheet_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/top_sheet_slide_out</item>
+    </style>
+
+    <style name="Widget.Design.TopSheet.Modal" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:elevation">16dp</item>
+        <item name="behavior_peekHeight">256dp</item>
+        <item name="behavior_hideable">true</item>
+    </style>
+
+</resources>

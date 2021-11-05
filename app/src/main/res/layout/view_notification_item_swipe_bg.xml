@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_bg_primary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+<!--    <Button-->
+<!--        android:id="@+id/notification_item_bg_btn_manage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginEnd="@dimen/_4sdp"-->
+<!--        android:layout_weight="0.5"-->
+<!--        android:background="@drawable/notification_item_swipe_bg_shape_mng"-->
+<!--        android:text="@string/manage"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:maxLines="1"-->
+<!--        android:textAppearance="@style/NotificationBGButtonText" />-->
+
+    <Button
+        android:id="@+id/notification_item_bg_btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_weight="0.35"
+        android:focusable="true"
+        android:clickable="true"
+        android:maxLines="1"
+        android:background="@drawable/bg_btn_clear_notification_item_swipe"
+        android:text="@string/text_clear"
+        android:textAppearance="@style/NotificationBGButtonText" />
+
+
+</LinearLayout>

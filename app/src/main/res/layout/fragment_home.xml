@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/home_layout_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:layout_marginBottom="116dp"
+        android:layout_gravity="center"
+        app:layout_anchorGravity="center"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:id="@+id/home_load_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_wait_a_minute"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            />
+        <ProgressBar
+            android:id="@+id/home_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginEnd="72dp"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:indeterminateOnly="true"
+            android:indeterminateTint="#009DFF"
+            android:indeterminateTintMode="src_in"
+            style="?android:attr/progressBarStyleHorizontal"
+            />
+    </LinearLayout>
+
+    <com.chahinem.pageindicator.PageIndicator
+        android:visibility="visible"
+        android:id="@+id/home_page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:piDefaultColor="#70ffffff"
+        app:piSelectedColor="#fff"
+        app:piDotSpacing="@dimen/_5sdp"
+
+        app:layout_anchor="@id/home_viewpager"
+        app:layout_anchorGravity="center|bottom"
+        />
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/home_app_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:layout_gravity="bottom|center_horizontal"-->
+<!--        android:background="@drawable/bg_home_bottom_menu"-->
+<!--        />-->
+
+    <!-- ===================== BOTTOM MENU =====================  -->
+    <LinearLayout
+        android:id="@+id/home_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_home_bottom_menu"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/home_appbar_phone"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:src="@drawable/app_bar_phone"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/home_appbar_messages"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:src="@drawable/app_bar_messages"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/home_appbar_safari"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:src="@drawable/app_bar_safari"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/home_appbar_camera"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:src="@drawable/app_bar_camera"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

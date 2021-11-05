@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_note" type="id"/>
+    <item name="item_header_search" type="id"/>
+    <item type="id" name="id_adapter_app_item" />
+
+    <item type="id" name="app_widget_host" />
+    <item type="id" name="id_adapter_icon_label_item" />
+    <item type="id" name="id_adapter_drawer_app_item" />
+    <item type="id" name="id_adapter_popup_icon_label_item" />
+
+
+    <item type="id" name="APPWIDGET_HOST_ID" />
+    <item type="id" name="REQUEST_PICK_APPWIDGET" />
+    <item type="id" name="REQUEST_CREATE_APPWIDGET" />
+    <item type="id" name="REQUEST_PICK_SHORTCUT" />
+    <item type="id" name="REQUEST_CREATE_SHORTCUT" />
+    <item type="id" name="REQUEST_PICK_THEME" />
+    <item type="id" name="HOME_LAYOUT_ID" />
+</resources>

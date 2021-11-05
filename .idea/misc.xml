@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.3578125" />
+        <entry key="app/src/main/res/drawable/app_bar_camera.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_btn_notification_item.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_btn_onboarding.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_dialog_notification_permission.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_dialog_permission.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_edittext_search.xml" value="0.3408333333333333" />
+        <entry key="app/src/main/res/drawable/bg_fs.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_fs_selector_blue.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_fs_wifi_bluetooth.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_progress_bar.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_search_frame.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/bg_workspace_default.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_battery_white_full.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_battery_yellow_save_mode.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_brightness_min.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_calendar.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_flashlight_enabled.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_location_enabled.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_lock_rotation_red.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_lock_rotation_white.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_settings.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_sound_mode_disabled.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_sound_mode_enabled.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/fs_ic_volume_min.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/help_bg_blur.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/help_ic_arrow_down.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/help_ic_arrow_up.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/help_ic_hand.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_green_100.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_green_20.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_green_40.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_green_60.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_green_80.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_red.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_white_100.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_white_above_20.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_white_above_40.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_white_above_60.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_yellow.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_battery_yellow_power_connect.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_bg_help.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_help_ic_arrow_up.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_notification_rectangle_bottom.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_search_grey.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_white_air_mode.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_white_alarm.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_white_bluetooth_disabled.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_white_bluetooth_enabled.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_white_camera.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_white_flashlight.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/drawable/ic_white_wifi_point.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/layout/activity_getstarted.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/activity_onboarding2.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/dialog_permission_notifications.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_permission_overlay.xml" value="0.37777777777777777" />
+        <entry key="app/src/main/res/layout/dialog_permission_write_settings.xml" value="0.37777777777777777" />
+        <entry key="app/src/main/res/layout/dialog_top_sheet.xml" value="0.37777777777777777" />
+        <entry key="app/src/main/res/layout/fragment_fast_settings.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/layout_help.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_home_grid_item.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_home_grid_item_in_vp.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_notification_item_swipe_bg.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_notification_item_swipe_bg_secondary.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_recycler_drag_item.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_recycler_notification_item.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_status_bar.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/view_vp_getstarted_item.xml" value="0.33125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.34739583333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
